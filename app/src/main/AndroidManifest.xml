@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pottssoftware.rfidmaint4">
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+    <application
+        android:name=".ApiDemoApp"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FindOneTagActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="Find One Tag" />
+        <activity
+            android:name=".SecondPageActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".RfidMaint_Main"
+            android:label="@string/title_activity_rfid_maint__main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".TreesEdit"
+            android:label="@string/title_activity_rfid_maint__main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <provider
+            android:name="MyContentProvider"
+            android:authorities="com.pottssoftware.rfidmaint4"
+            android:exported="true"
+            android:readPermission="com.pottssoftware.rfidmaint4.READ_DATABASE"
+            android:writePermission="com.pottssoftware.rfidmaint4.WRITE_DATABASE"
+            />
+
+    </application>
+
+</manifest>

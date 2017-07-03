@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- Title bar -->
+    <com.ugrokit.api.UgiTitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/textView"
+                android:text="Scanning for tag..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:id="@+id/findOneButton"
+                android:onClick="doCancel"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="6dip">
+<TableRow>
+    <TextView android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="EPC:"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/epc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=""
+          android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+<TableRow>
+    <TextView android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:text="Latin Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/lname"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Medium Text"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+<TableRow>
+    <TextView android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Latitude:"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+         android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+<TableRow>
+    <TextView android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Longitude:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+<TableRow>
+    <TextView android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Application:"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/application"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="" android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+<TableRow>
+    <TextView android:id="@+id/textView6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Client:"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/client"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text=""
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+<TableRow>
+    <TextView android:id="@+id/textView7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Date:"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Medium Text" android:textAppearance="?android:attr/textAppearanceMedium" />
+</TableRow>
+</TableLayout>
+
